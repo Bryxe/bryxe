@@ -1,0 +1,106 @@
+/*
+    Document   : dialogs
+    Created on : 01/11/2013, 12:02:09
+    Author     : Francisco Clariá
+    Description:
+*/
+
+.dialogContentWrapper {
+    font-size: 16px; /* therefore 1em equals this */
+    font-family: Verdana, Arial;
+    width: 480px;
+    height: auto;
+    min-height: 200px;
+}
+
+.dialogButton {
+    min-width: 100px;
+}
+
+@media screen and (min-width: 311px) and (max-width: 768px) {
+    .dialogContentWrapper {
+        width: 250px;
+        font-size: 12px; /* therefore 1em equals this */
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .dialogContentWrapper {
+        width: 200px;
+        font-size: 12px; /* therefore 1em equals this */
+    }
+
+    .dialogButton {
+        min-width: 75px;
+    }
+}
+
+.dialogContents {
+    margin: 5px;
+    width: 100%;
+}
+
+.dialogTitle {
+    font-size: 1.5em;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+    color: #737373;
+    background-color: #F4F4F4;
+    margin-top: 5px;
+}
+
+.dialogTitle p {
+    padding: 10px;
+    text-align: left;
+    margin: 0px;
+}
+
+.dialogBody {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #737373;
+}
+
+.dialogBody p {
+    margin: 5px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.dialogBodyRemark {
+    font-size: 1.1em;
+    font-weight: normal;
+    border: 2px solid #55B4EE;
+    color: #737373;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dialogBodyRemark p {
+    margin: 15px;
+}
+
+.dialogButtons {
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.dialogButton {
+    float: right;
+    border: 2px solid #BBBBBB;
+    color: white;
+    background-color: #0E5E8E;
+    font-size: 1em;
+    font-weight: normal;
+    margin-right: 0px;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dialogButton p {
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    margin: 5px;
+}

@@ -1,0 +1,12 @@
+article blockquote > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.jungle {
+    max-width: 500px;
+    width: 90%;
+}
+
+/*# sourceMappingURL=generalStylesHelpSection.css.map */

@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [
+    "../less/generalStylesHelpSection.less"
+  ],
+  "names": [],
+  "mappings": "AAAA,OAAQ,WAAW;EACf,cAAA;EACA,iBAAA;EACA,kBAAA;;AAGJ,GAAG;EACC,gBAAA;EACA,UAAA",
+  "file": "generalStylesHelpSection.css"
+}

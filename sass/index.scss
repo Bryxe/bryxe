@@ -1,0 +1,448 @@
+/*
+    Document   : generalStyles.scss
+    Created on : 25/02/2017, 12:13
+    Author     : Thiago Cruz dos Santos
+*/
+
+@import "compass/reset";
+@import "mixins";
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#registrationContainer, #loginContainer {
+    display: none;
+    z-index: 9991;
+    position: fixed;
+
+    .registrationForm, .loginForm {
+        display: table;
+        position: fixed;
+        top: 10%;
+        width: 80%;
+        left: 10%;
+        height: 100%;
+
+        span.errors {
+		    margin: -12px 0 7px;
+		    display: block;
+		    font-size: 11px;
+		    color: #E74444;
+		    padding-left: 7px;
+		    min-height: 1px;
+		}
+
+        span.closeButton {
+        	@extend %transition;
+		    position: fixed;
+		    right: 10px;
+		    top: 10px;
+		    border: 1px #AAA solid;
+		    padding: 5px 8px;
+		    border-radius: 100%;
+		    font-size: 20px;
+		    color: #AAA;
+		    cursor: pointer;
+		    font-family: helvetica;
+
+		    &:hover {
+		    	color: #589CFE;
+		    	border-color: #589CFE;
+		    }
+		}
+
+        label {
+            color: #555;
+            font-size: 12px;
+            font-weight: 600;
+
+            &.formCheckboxLabel {
+                display: inline-block;
+                cursor: pointer;
+                position: relative;
+                padding-left: 38px;
+                padding-top: 8px;
+                margin-left: -10px;
+
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    position: absolute;
+                    top: 3px;
+                    left: 10px;
+                    border: 1px solid #AEAEAE;
+                    background-color: white;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        input {        	
+            display: block;
+            width: 89.5%;
+            padding: 11px 5%;
+            color: #ADADAD;
+            border: 1px solid #AEAEAE;
+            background-color: white;
+            margin-bottom: 16px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-family: helvetica;
+            margin-top: 3px;
+
+            &[type=checkbox] {
+                display: none;
+            }
+
+            &.formSubmit {
+                background-color: #5B9BFD;
+                color: #FFF;
+                border: none;
+                padding: 16px;
+                width: 50%;
+                margin-left: 25%;
+                margin-top: 25px;
+            }
+
+            &:hover {
+           	    border-color: #365D97;
+            }
+
+            &:focus {
+           	    border: 2px solid #487CCA;
+	            margin-bottom: 14px;
+            }
+
+            &.error {
+           	    border: 1px solid #E74444;
+            }
+        }
+
+		input[type=checkbox]:checked + label:before {
+		    content: "\2713";
+		    font-size: 16px;
+		    color: #5b9bfd;
+		    text-align: center;
+		    line-height: 19px;
+		}
+
+        .formLink {
+            font-size: 14px;
+            color: #5B9BFD;
+            text-decoration: none;
+            margin-top: 2px;
+            cursor: pointer;
+            font-family: helvetica;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        span.lastLine {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            bottom: 33px;
+            text-align: center;
+            color: #555;
+
+            a {
+                text-decoration: underline;
+                cursor: pointer;
+
+                &:hover {
+                    color: #5B9BFD;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+
+.indexBody {
+    font-family: Verdana, Arial, Geneva;
+    font-size: 12px;
+    color: #000;
+    margin: 0px;
+    background-color: white;
+    min-width: 320px;
+}
+
+.indexBody .msgDialogBox {
+    padding: 0 !important;
+    background-color: #F9F9F9;
+}
+
+.indexBody .msgDialogBox .msgBoxIframe {
+    border: none;
+    height: 220px;
+    width: 320px;
+    min-width: 280px;
+    overflow: hidden;
+}
+
+.indexBody .copyrightBig {
+    display: none;
+}
+
+.indexBody .copyrightSmall {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.indexBody .copyrightSmall a {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.indexBody .wrapperBodyContents {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexBody .wrapperBodyContents .bodyContents {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    background-color: #FFF;
+    margin-bottom: -16px;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .bodyContentOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9990;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFF;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .toggleLoginBox {
+    display: block !important;
+    position: absolute;
+    z-index: 1000;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.indexBody .wrapperBodyContents .bodyContents #slider {
+    top: 0px;
+    position: relative;
+    height: 100vh;
+    cursor: pointer;
+}
+
+.indexBody .wrapperBodyContents .bodyContents #slider .slides {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.indexBody .wrapperBodyContents .bodyContents #slider .slides .slide {
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: 151%;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.indexBody .wrapperBodyContents .bodyContents #slider .slides .slide:first-of-type {
+    display: block;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .welcomeImage {
+    display: block !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .welcomeImage img {
+    width: 100%;
+    height: auto;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .sloganBox {
+    margin-top: 3px;
+    position: relative;
+    top: auto;
+    overflow: hidden;
+    left: auto;
+    width: auto;
+    border: none;
+    background-color: #ffffff;
+    height: auto;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .sloganBox p {
+    margin: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+.indexBody .wrapperBodyContents .bodyContents .addBox1 {
+    display: block;
+    position: relative;
+    top: auto;
+    overflow: hidden;
+    left: auto;
+    width: auto;
+    border: none;
+    background-color: white;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+
+div#upperLinks {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+}
+
+a.logonBtn {
+    float: right;
+    color: #777;
+    width: 43px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: helvetica;
+    cursor: pointer;
+    text-align: center;
+}
+
+img#logoLogin {
+    width: 30%;
+    position: fixed;
+    z-index: 9991;
+    top: 7px;
+    left: 35%;
+}
+
+div#registerButton {
+    position: fixed;
+    z-index: 999;
+    background: #589CFE;
+    bottom: 70px;
+    width: 160px;
+    left: 50%;
+    color: #FFF;
+    font-size: 16px;
+    font-family: helvetica;
+    text-align: center;
+    padding: 16px 7px;
+    border-radius: 30px;
+    margin-left: -82px;
+    cursor: pointer;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .addBox1 p {
+    margin: 5px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .addBox1 img {
+    cursor: pointer;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .addBox2 {
+    position: relative;
+    top: auto;
+    right: auto;
+    border: none;
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .addBox2 p {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .preLoginForm {
+    display: none;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .loginBox {
+    position: absolute;
+    z-index: 999;
+    top: 45px;
+    left: 0px;
+    right: 0px;
+    background-image: none;
+    background-color: transparent;
+    display: none;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .loginBox .loginForm {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #9ABCD0;
+    background-position: top center;
+    background-repeat: repeat-x;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.indexBody .wrapperBodyContents .bodyContents .loginBox .loginForm .inLoginForm {
+    display: block !important;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .loginBox .loginForm .formContents {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .loginBox .formSplitter {
+    background-color: transparent !important;
+    height: 4px !important;
+}
+
+.indexBody .wrapperBodyContents .bodyContents .loginBox .registrationForm {
+    width: 270px;
+    margin-left: auto;
+    margin-right: 10px;
+    background-color: #9ABCD0;
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.indexBody .wrapperBodyContents .bodyContents .loginBox .registrationForm .formContents {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}

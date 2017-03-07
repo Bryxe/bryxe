@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------------------------------
+1. http://www.sevenstarinfotech.com/projects/demo/iSinger/API/add_item.php?song_name_item_=rabbeaati&category_id_item_=2&singer_id_item_=3122&song_link_item_=rabbeaati&type_item_=song&appKey=1234
+
+2. http://www.sevenstarinfotech.com/projects/demo/iSinger/API/add_item.php?appKey=1234&type_item_=twitter&twitter_username_item_=Twitter%20Test%20Title&twitter_title_item_=twittertestusername
+
+3. http://www.sevenstarinfotech.com/projects/demo/iSinger/API/check_reportbroken.php?songid=575&appKey=1234

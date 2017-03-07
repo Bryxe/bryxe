@@ -1,0 +1,342 @@
+/*
+    Created on : 23/12/2013, 10:44:54
+    Author     : Francisco
+*/
+/* ==========================================================================
+   Media Queries Overrides
+   ========================================================================== */
+/* CSS for high-resolution devices */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+  .header-container .wrapper .mainNav .menu {
+    background-image: url("../images/template/menu_nav@2x.png");
+    background-size: 58px 37px;
+  }
+  .operationMessages {
+    background-image: url("../images/template/close@2x.png");
+    background-size: 32px 19px;
+  }
+  .header-container .wrapper .mainNav .addPost {
+    background-image: url("../images/template/icon-new-post.png");
+  }
+  .header-container .wrapper .mainNav .editNote {
+    background-image: url("../images/template/menu_edit_note@2x.png");
+    background-size: 56px 32px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .profileTopic,
+  .profileGroup {
+    display: none;
+  }
+  .profileTopicIcon {
+    /*width: 28px;
+    height: 25px;*/
+    /*margin-top: -3px;
+    margin-left: 10px;*/
+  }
+  .profileGroupIcon {
+    padding-top: 0;
+    /*width: 25px;
+    height: 22px;*/
+    /*margin-top: -3px !important;
+    margin-left: 0px;*/
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 719px) {
+  .profileTopic,
+  .profileGroup {
+    max-width: 60px;
+  }
+}
+@media only screen and (min-width: 720px) {
+  /* TOP NAV */
+  .header-container .wrapper .subNav .tabs .tab25 .tabContentSelected,
+  .header-container .wrapper .subNav .tabs .tab25 .tabContent {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .header-container .wrapper .mainNav .userProfile,
+  .header-container .wrapper .mainNav .topTitle {
+    min-width: 350px;
+    max-width: 600px;
+    width: auto;
+    overflow: hidden;
+  }
+  .header-container .wrapper .mainNav .userProfile .profileImage,
+  .header-container .wrapper .mainNav .topTitle .profileImage {
+    margin-left: 8px;
+  }
+  .header-container .wrapper .mainNav .userProfile .profileNameAndGroup,
+  .header-container .wrapper .mainNav .topTitle .topTitleContents {
+    width: auto;
+    max-width: 100%;
+    min-width: 450px;
+    /*height: 38px;*/
+    overflow: hidden;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 8px;
+    float: left;
+    line-height: 1;
+    cursor: pointer;
+    /*.profileName:after {
+      content: "";
+      display: block;
+      float: right;
+      height: 24px;
+      width: 2px;
+      border-left: 1px solid #0073B0;
+      border-right: 1px solid #0099EC;
+      margin-left: 6px;
+    }*/
+  }
+  .header-container .wrapper .mainNav .userProfile .profileNameAndGroup br,
+  .header-container .wrapper .mainNav .topTitle .topTitleContents br {
+    display: none;
+  }
+  .header-container .wrapper .mainNav .userProfile .profileNameAndGroup .profileName,
+  .header-container .wrapper .mainNav .topTitle .topTitleContents .profileName,
+  .header-container .wrapper .mainNav .userProfile .profileNameAndGroup .topSectionTitle,
+  .header-container .wrapper .mainNav .topTitle .topTitleContents .topSectionTitle {
+    line-height: 24px;
+    height: 24px;
+    font-size: 14px;
+    color: white;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    font-weight: lighter;
+    white-space: nowrap;
+    /*display: block;
+      float: left;*/
+  }
+  .header-container .wrapper .mainNav .userProfile .profileNameAndGroup .profileTopic,
+  .header-container .wrapper .mainNav .topTitle .topTitleContents .profileTopic,
+  .header-container .wrapper .mainNav .userProfile .profileNameAndGroup .profileGroup,
+  .header-container .wrapper .mainNav .topTitle .topTitleContents .profileGroup {
+    line-height: 24px;
+    height: 24px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #CCE7F5;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.35);
+    font-weight: normal;
+    white-space: nowrap;
+    display: block;
+    float: left;
+    margin-left: 4px;
+    margin-top: 1px;
+    max-width: 250px;
+    overflow: hidden;
+  }
+  .header-container .wrapper .mainNav .userProfile .profileNameAndGroup .profileTopicIcon,
+  .header-container .wrapper .mainNav .topTitle .topTitleContents .profileTopicIcon {
+    /*display: block;
+      float: left;*/
+    padding: 0;
+    margin: 0;
+    /*margin-top: 2px;
+      margin-left: 5px;*/
+  }
+  .header-container .wrapper .mainNav .userProfile .profileNameAndGroup .profileGroupIcon,
+  .header-container .wrapper .mainNav .topTitle .topTitleContents .profileGroupIcon {
+    /*display: block;
+      float: left;*/
+    padding: 0;
+    margin: 0;
+    /*margin-left: 8px;
+      margin-top: 5px;*/
+  }
+  .header-container .wrapper .mainNav .addPost {
+    width: 26px;
+    height: 25px;
+    overflow: hidden;
+    float: right;
+    margin-right: 15px;
+    margin-top: 16px;
+    background-image: url("../images/template/icon-new-post.png");
+    cursor: pointer;
+  }
+  .header-container .wrapper .mainNav .editNote {
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    float: right;
+    margin-right: 3px;
+    margin-top: 3px;
+    background-image: url("../images/template/edit_note_btn@2x.png");
+    background-size: 200px 40px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  /* END TOP NAV */
+  /* POSTS VIWERES VIEWING SEARCH */
+  .graybox .postHeader,
+  .graybox .rowHeader {
+    height: 51px;
+  }
+  .graybox .postHeader .postData,
+  .graybox .rowHeader .rowData {
+    height: 51px;
+    width: auto;
+    min-width: 350px;
+    max-width: 380px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .graybox .postHeader .postData .roundProfileImage,
+  .graybox .rowHeader .rowData .roundProfileImage {
+    display: block;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    margin-left: 2px;
+    margin-top: 1px;
+    margin-right: 8px;
+    float: left;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .graybox .postHeader .postData .userName,
+  .graybox .rowHeader .rowData .userName {
+    font-size: 18px;
+    color: #333333;
+    text-shadow: 0px 1px white;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    width: auto;
+    min-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .graybox .postHeader .postData .postedTime,
+  .graybox .rowHeader .rowData .rowSub {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #999999;
+    text-shadow: 0px 1px white;
+    display: block;
+    margin-top: -3px;
+    width: auto;
+    min-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .graybox .postHeader .postActions,
+  .graybox .rowHeader .rowActions {
+    float: right;
+    width: auto;
+    min-width: 340px;
+    margin-right: -4px;
+    cursor: pointer;
+  }
+  .graybox .postHeader .postActions .downloadAttachment {
+    display: block;
+    text-decoration: none;
+    float: right;
+    width: 126px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/dwdAttach_wide@2x.png") top left no-repeat;
+    background-size: 126px 51px;
+    cursor: pointer;
+  }
+  .graybox .postHeader .postActions .delpost {
+    float: right;
+    width: 38px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/delpost_wide@2x.png") top left no-repeat;
+    background-size: 38px 51px;
+    cursor: pointer;
+  }
+  .graybox .postHeader .postActions .reply {
+    float: right;
+    width: 107px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/reply_wide@2x.png") top left no-repeat;
+    background-size: 107px 51px;
+  }
+  .graybox .postHeader .postActions .reply.disabled {
+    float: right;
+    width: 107px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/reply_wide@2x_disabled.png") top left no-repeat;
+    background-size: 107px 51px;
+  }
+  .graybox .postHeader .postActions .editpost {
+    float: right;
+    width: 88px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/edit_wide@2x.png") top left no-repeat;
+    background-size: 88px 51px;
+  }
+  .graybox .postHeader .postActions .editpost.disabled {
+    float: right;
+    width: 88px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/edit_wide@2x_disabled.png") top left no-repeat;
+    background-size: 88px 51px;
+  }
+  .graybox .postHeader .postActions .repost {
+    float: right;
+    width: 107px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/repost_wide@2x.png") top left no-repeat;
+    background-size: 107px 51px;
+  }
+  .graybox .postHeader .postActions .repost.disabled {
+    float: right;
+    width: 107px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/repost_wide@2x_disabled.png") top left no-repeat;
+    background-size: 107px 51px;
+  }
+  .graybox .rowHeader .rowActions .changeGroupLevel {
+    display: block;
+    float: right;
+    width: 107px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/groups_wide@2x.png") top left no-repeat;
+    background-size: 107px 51px;
+  }
+  .graybox .rowHeader .rowActions .viewUser {
+    display: block;
+    float: right;
+    width: 107px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/view_wide@2x.png") top left no-repeat;
+    background-size: 107px 51px;
+  }
+  .graybox .rowHeader .rowActions .unViewUser {
+    display: block;
+    float: right;
+    width: 107px;
+    height: 51px;
+    background: #EAEAEA url("../images/template/unview_wide@2x.png") top left no-repeat;
+    background-size: 107px 51px;
+  }
+  .graybox .postContent a,
+  .graybox .rowContent a {
+    width: 80px;
+  }
+  .graybox .postContent .postedImage,
+  .graybox .rowContent .rowImage {
+    max-height: 56px;
+    max-width: 80px;
+    width: auto;
+  }
+  /* END POSTS VIWERES VIEWING SEARCH */
+  /* SEARCH*/
+  .searchButtonLabel {
+    color: #0087CD;
+    display: inline !important;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  /* END SEARCH*/
+}

@@ -1,0 +1,55 @@
+/*
+    Created on : 10/12/2013, 09:46:09
+    Author     : Francisco
+*/
+/* EDIT ACCOUNT SPECIFIC */
+.slideViewOrSetProfile .profileImage {
+    display: block;
+    float: left;
+    border: 1px solid white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.65);
+    max-width: 100px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.slideViewOrSetProfile .profileFullname {
+    margin: 2px;
+    text-shadow: 0px 1px white;
+    font-weight: bold;
+}
+
+.slideViewOrSetProfile .profileUsername {
+    margin: 2px;
+    font-size: 12px;
+    color: #666666;
+    text-shadow: 0px 1px white;
+}
+
+.slideViewOrSetProfile .profileBio {
+    margin: 2px;
+    text-shadow: 0px 1px white;
+    font-size: 13px;
+    display: block;
+    border: 1px solid white;
+    box-shadow: 0px 1px 0px rgba(100, 100, 100, 0.15);
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.slideViewOrSetProfile .profileBio hr {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.slideViewOrSetProfile .profileWebpage {
+    font-size: 13px;
+    text-align: right;
+}
+
+/*# sourceMappingURL=view_or_set_profile.css.map */
