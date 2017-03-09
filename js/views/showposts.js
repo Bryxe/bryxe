@@ -83,8 +83,3 @@ function loadMoreRows(baseUrl) {
     });
 }
 
-$(function(){
-    $(document).click(function(event) {
-        if(document.getElementsByClassName(''))
-    });
-});

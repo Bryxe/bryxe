@@ -54,8 +54,8 @@ if (!isset($_REQUEST['latest_offset'])) {//dont include when calling via Ajax wi
             <header class="rowHeader">
                 <div class="rowData clearfix">
                     <a class="roundProfileImage swipebox" rel="gallery-usr-<?php echo $xo; ?>"
-                       href="<?php echo $user_full; ?>" target="_new">
-                        <img src="<?php echo $user_full; ?>" height="100%">
+                       href="<?php echo $user_full; ?>" target="_new" 
+                       style="background-image: url(<?php echo $user_full; ?>)">
                     </a>
                     <span class="userName"
                           onclick="showContentOnSlide('<?php echo BASE_URL; ?>showuserinfo/<?php echo($vinfo['uname']); ?>');"><?php echo $vinfo['fullNm']; ?></span>
@@ -80,7 +80,7 @@ if (!isset($_REQUEST['latest_offset'])) {//dont include when calling via Ajax wi
         $xo++;
     }
     ?>
-    <footer class="main-containerFooter clearfix">
+
         <?php if ($hasRows && ((int)$viewer_information['cntLeft']) > 0) {
             ?>
             <div class="loadMoreData" onclick="loadMoreRows(startRows, '<?php echo BASE_URL; ?>');">Load more</div>
@@ -92,8 +92,7 @@ if (!isset($_REQUEST['latest_offset'])) {//dont include when calling via Ajax wi
             <?php
         }
         ?>
-        <div style="height: 10px;"></div>
-    </footer>
+        
 
     <div style="clear: both;height: 20px;"></div>
     <div class="copyrightFooter" style="width: 100%;text-align: center;">© 2017 Acupic - <a

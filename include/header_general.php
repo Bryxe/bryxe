@@ -153,13 +153,17 @@ if (isset($create_message) && is_array($create_message) && !empty($create_messag
                     <div class="profileButtonsContainer">
                         <a class="profileGroupIconLink" onclick="showContentOnSlide('<?php echo BASE_URL; ?>levelselect');"><span class="profileGroupIcon"
                             style="background-image: url(<?php echo IMAGES_PATH; ?>/template/icon-group-white.png)"></span><span><?=$_SESSION['level_name']; ?></span></a>
-                        <!--<div class="profileGroupBubble" onclick="showContentOnSlide('<?php /*echo BASE_URL; */ ?>levelselect');">
+                        
                         <?php
-                        /*                        if ((int)$_SESSION['level_post_count']['total_unread'] > 0) {
-                                                    echo "new"; //$_SESSION['level_post_count']['total_unread'];
-                                                }
-                                                */ ?>
-                    </div>-->
+                            if ((int)$_SESSION['level_post_count']['total_unread'] > 0) {
+                                ?><div class="profileGroupBubble" onclick="showContentOnSlide('<?php /*echo BASE_URL; */ ?>levelselect');">
+
+                                <?php echo "new"; //$_SESSION['level_post_count']['total_unread']; ?>
+
+                                </div>
+                           <?php }
+                            //else echo "new";
+                        ?>
                         <!--<span class="profileGroup" onclick="showContentOnSlide('<?php /*echo BASE_URL; */?>levelselect');">
                         <?php /*echo $_SESSION['level_name']; */?>
                     </span>-->
