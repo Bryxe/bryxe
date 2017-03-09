@@ -1,7 +1,9 @@
 <?php
 
 include_once(INCLUDE_PATH . '/check_session.php');
+
 $pageTitle = 'Show Posts';
+
 include_once(INCLUDE_PATH . '/socket_function.php');
 $username = $_SESSION['username'];
 $password = $_SESSION['password'];
@@ -96,7 +98,9 @@ if ($topics["result_code"] == 1) {
         if ((int)$tp["topic_id"] == $topic) {
             $_SESSION["topic"] = $tp["topic_id"];
             $_SESSION["topicName"] = $tp["topic"];
-            $_SESSION['totalPosts'] = $tp["oldposts"] + $tp["newposts"];
+            
+            // Actual Posts Calculation
+            $_SESSION['totalPosts'] = $tp["oldposts"] /*+ $tp["newposts"] Uncomment for the New Posts SUM */;
             break;
         }
     }

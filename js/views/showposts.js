@@ -83,11 +83,8 @@ function loadMoreRows(baseUrl) {
     });
 }
 
-function scrollPostBox(element) {
-    if ($(".mainNav").hasClass("colapsedMenu")) {
-        $(element).ScrollTo({offsetTop: 48});
-    } else {
-        $(element).ScrollTo({offsetTop: 90});
-    }
-
-}
+$(function(){
+    $(document).click(function(event) {
+        if(document.getElementsByClassName(''))
+    });
+});

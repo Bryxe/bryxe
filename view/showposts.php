@@ -5,6 +5,8 @@ if (!isset($_REQUEST['latest_offset'])) {//dont include when calling via Ajax wi
     <?php
 }//endif
 ?>
+
+
 <section class="main-container">
     <?php
     $protectionlevel = $_SESSION['level'];
@@ -155,16 +157,16 @@ if (!isset($_REQUEST['latest_offset'])) {//dont include when calling via Ajax wi
                         if ($user_post['postRef'] != "0000000000000" && $_SESSION['level'] >= 0) {
                             ?>
 
-                            <div class="delpost"
-                                 onclick="if (confirm('Are you sure you want to remove this post?')) {
-                                         $.get('<?php echo BASE_URL; ?>showposts/?delpost=<?php echo($user_post['postRef']); ?>', function (data) {
-                                         if (data == 'ok') {
+                            <div class="delpost" onclick="
+                            if (confirm('Are you sure you want to remove this post?')) {
+                               $.get('<?php echo BASE_URL; ?>showposts/?delpost=<?php echo($user_post['postRef']); ?>', function (data) {
+                                    if (data == 'ok') {
                                          window.location = '<?php echo BASE_URL; ?>showposts/';
-                                         } else {
+                                    } else {
                                          alert(data);
-                                         }
-                                         });
-                                         }"></div>
+                                    }
+                                });
+                            }"></div>
                             <?php
                         }
                         ?>
